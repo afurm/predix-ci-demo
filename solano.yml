@@ -1,12 +1,12 @@
 ---
 pipeline:
-  fetch:
+  clone:
     - unit_test: deploy
     - build
 edges:
   - build: deploy
 profiles:
-  fetch:
+  clone:
     script: ./scripts/fetch.sh
     output: 
       - scm_artifact.tar
