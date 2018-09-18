@@ -5,8 +5,7 @@ source scripts/functions.sh
 
 export PREDIX_REPO_ROOT=`pwd`
 
-cp Dockerfile ~/
-cd ~
+cp Dockerfile ./
 
 tar -xvf build_artifact.tar
 ls -la
