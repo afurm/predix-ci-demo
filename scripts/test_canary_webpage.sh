@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -o errexit -o pipefail # Exit on error
 
-cd ~
-
 HTML_FILE=scm_artifact/index.html
 
 if [ -z "$1" ]; then
