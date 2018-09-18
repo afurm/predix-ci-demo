@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -e # Exit on error
 
-cd ~
-
 tar -xvf scm_artifact.tar
 ls -l
 
