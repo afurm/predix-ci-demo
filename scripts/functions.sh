@@ -115,6 +115,8 @@ function fetch_previous_sessions_info {
 }
 
 function install_jq {
+  export GUESS_HOME=`eval echo "~$(whoami)"`
+  export HOME=${HOME:-$GUESS_HOME}
   mkdir -p $HOME/bin
   wget -O $HOME/bin/jq https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64
   chmod +x $HOME/bin/jq
