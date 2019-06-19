@@ -14,8 +14,6 @@ edges:
 
 profiles:
   site_unit:
-    input: 
-      - scm_artifact.tar
     script: ./scripts/unit_test.sh
     profile_config:
       advance_on:                   # can also just be string value
@@ -24,8 +22,6 @@ profiles:
 
  # Integration tests for services/site
   site_integration:
-    input: 
-       - build_artifact.tar
     script: ./scripts/deploy.sh
     profile_config:
       advance_on:                   # can also just be string value
@@ -36,21 +32,15 @@ profiles:
  # Site Integration (Predix)
  # --------------------------
   site_integration_predix_ui:
-    input: 
-       - build_artifact.tar
     script: ./scripts/deploy.sh
 
   dw_unit:
-     input: 
-       - build_artifact.tar
      script: ./scripts/deploy.sh
   
  # --------------------------
  # Worker unit tests
  # --------------------------
   docs_unit:
-     input: 
-       - build_artifact.tar
      script: ./scripts/deploy.sh
 
   default:
