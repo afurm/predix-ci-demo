@@ -16,17 +16,17 @@ profiles:
   site_unit:
     script: ./scripts/unit_test.sh
     profile_config:
-      advance_on:                   # can also just be string value
-        - branch: "*"
-          advance_on: "always"
+#       advance_on:                   # can also just be string value
+#         - branch: "*"
+#           advance_on: "always"
 
  # Integration tests for services/site
   site_integration:
     script: ./scripts/deploy.sh
     profile_config:
-      advance_on:                   # can also just be string value
-        - branch: "*"
-          advance_on: "always"
+#       advance_on:                   # can also just be string value
+#         - branch: "*"
+#           advance_on: "always"
 
  # --------------------------
  # Site Integration (Predix)
